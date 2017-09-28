@@ -1,0 +1,31 @@
+<html>
+    <head>
+        
+    </head>
+    <body bgcolor="blue">
+        <script>
+            var a, b, c;
+            var count = 0;
+            for (var i = 0; i < 5; i++){
+                a = Math.round(Math.random() * 8 + 1);
+                b = Math.round(Math.random() * 8 + 1);
+                c = prompt(a + "*" + b + "=");
+                if (c = a*b){
+                    count++;
+                }
+            }
+            if (count == 5){
+                alert("Молодцы, 5!");
+            }
+            else if (count == 4){
+                alert("Есть ошибка, 4");
+            }
+            else if (count == 3){
+                alert("Старайтесь лучше, 3");
+            }
+            else if (count < 3){
+                alert("Все плохо, 2!");
+            }
+        </script>
+    </body>
+</html>
